@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Library</h1>
+        <input type="text" id="searchBar" placeholder="Search...">
+        <button id="recordsBtn" onclick="showOptions()">Records</button>
+        <div id="options" style="display: none;">
+            <button onclick="showActions('books')">Books</button>
+            <button onclick="showActions('students')">Students</button>
+            <button onclick="showActions('transactions')">Transactions</button>
+        </div>
+        <div id="actions" style="display: none;">
+            <button onclick="showActionForm('create')">Create</button>
+            <button onclick="showActionForm('update')">Update</button>
+            <button onclick="showActionForm('delete')">Delete</button>
+        </div>
+        <form id="actionForm" style="display: none;">
+            <!-- Form fields for creating, updating, or deleting records -->
+        </form>
+        <div id="message" style="display: none;"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
